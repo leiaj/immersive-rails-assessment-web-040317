@@ -1,0 +1,8 @@
+<h1> Add an Appearance </h1>
+<%= form_for @appearance do |f| %>
+<%= f.label :episode %><br>
+<%= f.number_field :episode_id %><br>
+<%= f.label :guest %><br>
+<%= f.number_field :guest_id %><br>
+<%= f.submit %>
+<% end %>

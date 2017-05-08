@@ -1,0 +1,9 @@
+<h1><%= @episode.date %>
+<%= @episode.number %></h1>
+<br>
+
+<% @appearances.each do |appearance| %>
+<%= appearance.guest %>
+<% end %>
+
+<%= link_to "Add Appearance", '/appearances/new'%>
